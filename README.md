@@ -49,6 +49,17 @@ bash run_subject8.sh
 
 The trained model is saved as `subject8_emg_cnn_model_pi.pth`.
 
+## One-command Subject 9 run
+
+The complete Subject 9 dataset is included. This trains on trials 1-12 and
+tests on trials 13-16:
+
+```bash
+bash run_subject9.sh
+```
+
+The trained model is saved as `subject9_emg_cnn_model_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

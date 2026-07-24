@@ -10,3 +10,4 @@ __pycache__/
 !Subject8/**/*.txt
 !Subject9/**/*.txt
 !Subject2GloveOff/**/*.txt
+!Subject2GloveOn/**/*.txt

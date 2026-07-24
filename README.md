@@ -71,6 +71,17 @@ bash run_subject2_gloveoff_size200.sh
 
 The trained model is saved as `subject2_gloveoff_size200_cnn_pi.pth`.
 
+## One-command Subject 2 Glove On, clip size 300 run
+
+The `Subject2GloveOn/ResultClipSizeUp300` dataset is included. This trains on
+trials 1-12 and tests on trials 13-16:
+
+```bash
+bash run_subject2_gloveon_size300.sh
+```
+
+The trained model is saved as `subject2_gloveon_size300_cnn_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

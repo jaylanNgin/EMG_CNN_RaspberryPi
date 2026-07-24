@@ -1,0 +1,54 @@
+# EMG CNN for Raspberry Pi
+
+PyTorch CNN inference for two EMG activities (`act1` and `act2`) using three
+channels (`ch1`, `ch2`, and `ch3`). The included model was trained using
+Subject 7 data.
+
+## Raspberry Pi requirements
+
+- Raspberry Pi 4 or 5
+- 64-bit Raspberry Pi OS (`uname -m` should print `aarch64`)
+- Python 3
+
+## Install
+
+```bash
+sudo apt update
+sudo apt install -y python3-full python3-venv git
+
+git clone https://github.com/jaylanNgin/EMG_CNN_RaspberryPi.git
+cd EMG_CNN_RaspberryPi
+
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## Run a prediction
+
+The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,
+and `ch3` columns. A `timestamp` column is optional.
+
+```bash
+source .venv/bin/activate
+
+python main_cnn_emg.py \
+  --predict-csv path/to/recording.txt \
+  --model-path subject7_emg_cnn_model_improved.pth
+```
+
+The program segments the recording into windows and prints the majority-vote
+gesture prediction.
+
+## Model configuration
+
+- Classes: `act1`, `act2`
+- EMG channels: `ch1`, `ch2`, `ch3`
+- Sampling rate used for training: 1000 Hz
+- Window length: 200 ms
+- Window stride: 50 ms
+- Normalization: per-window
+
+This program performs inference on completed recording files. Reading directly
+from a live EMG sensor requires a separate serial/ADC acquisition loop.

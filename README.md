@@ -38,6 +38,17 @@ The first run downloads PyTorch and can take several minutes. Later runs reuse
 the local virtual environment. The trained model is saved as
 `subject7_emg_cnn_model_pi.pth`.
 
+## One-command Subject 8 run
+
+The complete Subject 8 dataset is also included. This trains on trials 1-12
+and tests on trials 13-16:
+
+```bash
+bash run_subject8.sh
+```
+
+The trained model is saved as `subject8_emg_cnn_model_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

@@ -25,6 +25,19 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+## One-command Subject 7 run
+
+The complete Subject 7 dataset is included. To install the required packages,
+prepare the trial-level split, train on trials 1-8, and test on trials 9-10:
+
+```bash
+bash run_subject7.sh
+```
+
+The first run downloads PyTorch and can take several minutes. Later runs reuse
+the local virtual environment. The trained model is saved as
+`subject7_emg_cnn_model_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

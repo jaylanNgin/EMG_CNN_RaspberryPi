@@ -44,7 +44,7 @@ echo "Training on trials 1-12 and testing on trials 13-16..."
     --test-dir "$DATASET_DIR/test" \
     --sampling-rate 1000 \
     --channels ch1 ch2 ch3 \
-    --window-ms 400 \
+    --window-ms 200 \
     --stride-ms 50 \
     --normalize-mode per_window \
     --batch-size 32 \

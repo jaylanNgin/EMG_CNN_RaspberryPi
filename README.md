@@ -127,6 +127,8 @@ bash run_subject3ball_size400.sh
 ```
 
 The trained model is saved as `subject3ball_size400_cnn_pi.pth`.
+The 400-sample recordings are segmented with a 200 ms sliding window and 50 ms
+stride, producing 120 training windows and 40 test windows.
 
 ## Run a prediction
 

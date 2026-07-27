@@ -117,6 +117,17 @@ The trained model is saved as `subjectnorm_size250_cnn_pi.pth`.
 This runner uses global training-set normalization, which improved the held-out
 test accuracy from 50.0% to 87.5% for this dataset.
 
+## One-command Subject 3 Ball, clip size 400 run
+
+The `Subject3Ball/ResultClipSizeUp400` dataset is included. This trains on
+trials 1-12 and tests on trials 13-16:
+
+```bash
+bash run_subject3ball_size400.sh
+```
+
+The trained model is saved as `subject3ball_size400_cnn_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

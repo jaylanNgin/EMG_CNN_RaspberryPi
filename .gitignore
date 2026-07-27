@@ -14,3 +14,4 @@ __pycache__/
 !SubjectFast/**/*.txt
 !SubjectSlow/**/*.txt
 !SubjectNorm/**/*.txt
+!Subject3Ball/**/*.txt

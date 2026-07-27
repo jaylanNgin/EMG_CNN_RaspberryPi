@@ -93,6 +93,17 @@ bash run_subjectfast_size300.sh
 
 The trained model is saved as `subjectfast_size300_cnn_pi.pth`.
 
+## One-command Subject Slow, clip size 200 run
+
+The `SubjectSlow/ResultClipSizeUp200` dataset is included. This trains on trials
+1-12 and tests on trials 13-16:
+
+```bash
+bash run_subjectslow_size200.sh
+```
+
+The trained model is saved as `subjectslow_size200_cnn_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

@@ -46,7 +46,7 @@ echo "Training on trials 1-12 and testing on trials 13-16..."
     --channels ch1 ch2 ch3 \
     --window-ms 100 \
     --stride-ms 25 \
-    --normalize-mode global \
+    --normalize-mode per_window \
     --batch-size 32 \
     --epochs 200 \
     --model-path subject3bottle_size200_cnn_pi.pth

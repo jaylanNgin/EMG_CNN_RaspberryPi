@@ -142,6 +142,7 @@ bash run_subject3bottle_size200.sh
 The 200-sample recordings use a 100 ms sliding window and 25 ms stride,
 producing 120 training windows and 40 test windows. The trained model is saved
 as `subject3bottle_size200_cnn_pi.pth`.
+This runner uses per-window normalization.
 
 ## Run a prediction
 

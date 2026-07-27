@@ -45,8 +45,8 @@ echo "Training on trials 1-12 and testing on trials 13-16..."
     --sampling-rate 1000 \
     --channels ch1 ch2 ch3 \
     --window-ms 250 \
-    --stride-ms 50 \
-    --normalize-mode per_window \
+    --stride-ms 25 \
+    --normalize-mode global \
     --batch-size 32 \
     --epochs 200 \
     --model-path subjectnorm_size250_cnn_pi.pth

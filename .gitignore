@@ -15,3 +15,4 @@ __pycache__/
 !SubjectSlow/**/*.txt
 !SubjectNorm/**/*.txt
 !Subject3Ball/**/*.txt
+!Subject3Bottle/**/*.txt

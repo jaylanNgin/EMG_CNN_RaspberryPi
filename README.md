@@ -130,6 +130,19 @@ The trained model is saved as `subject3ball_size400_cnn_pi.pth`.
 The 400-sample recordings are segmented with a 200 ms sliding window and 50 ms
 stride, producing 120 training windows and 40 test windows.
 
+## One-command Subject 3 Bottle, clip size 200 run
+
+The `Subject3Bottle/ResultClipSizeUp200` dataset is included. This trains on
+trials 1-12 and tests on trials 13-16:
+
+```bash
+bash run_subject3bottle_size200.sh
+```
+
+The 200-sample recordings use a 100 ms sliding window and 25 ms stride,
+producing 120 training windows and 40 test windows. The trained model is saved
+as `subject3bottle_size200_cnn_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

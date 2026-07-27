@@ -16,3 +16,4 @@ __pycache__/
 !SubjectNorm/**/*.txt
 !Subject3Ball/**/*.txt
 !Subject3Bottle/**/*.txt
+!Subject3Spoon/**/*.txt

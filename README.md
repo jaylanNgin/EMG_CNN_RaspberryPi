@@ -144,6 +144,19 @@ producing 120 training windows and 40 test windows. The trained model is saved
 as `subject3bottle_size200_cnn_pi.pth`.
 This runner uses per-window normalization.
 
+## One-command Subject 3 Spoon, clip size 400 run
+
+The `Subject3Spoon/ResultClipSizeUp400` dataset is included. This trains on
+trials 1-12 and tests on trials 13-16:
+
+```bash
+bash run_subject3spoon_size400.sh
+```
+
+The 400-sample recordings use a 200 ms sliding window, 50 ms stride, and
+per-window normalization, producing 120 training windows and 40 test windows.
+The trained model is saved as `subject3spoon_size400_cnn_pi.pth`.
+
 ## Run a prediction
 
 The input must be a `.txt`, `.csv`, or `.tsv` file with numeric `ch1`, `ch2`,

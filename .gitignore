@@ -11,3 +11,4 @@ __pycache__/
 !Subject9/**/*.txt
 !Subject2GloveOff/**/*.txt
 !Subject2GloveOn/**/*.txt
+!SubjectFast/**/*.txt
